@@ -1,0 +1,1182 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#14395E">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxNDM5NUUiLz48cGF0aCBkPSJNNiAzNmgxMmw1LTE0IDggMjYgNi0xOCA0IDZoMTciIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0U3NTIyMCIgc3Ryb2tlLXdpZHRoPSI1IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=">
+<meta property="og:title" content="Guia do Eletrocardiograma">
+<meta property="og:description" content="O exame do coração explicado de um jeito simples. PET-Saúde: Informação e Saúde Digital · HU-UFRR.">
+<meta property="og:type" content="website">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Guia do Eletrocardiograma</title>
+<meta name="description" content="Guia digital sobre o eletrocardiograma (ECG) para usuários e profissionais. Mutirão de Saúde HU-UFRR, PET-Saúde: Informação e Saúde Digital.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:wght@600;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: uma coluna de leitura (~44rem) sobre "papel de ECG"; barra fixa para escolher a versão (usuários/profissionais); ferramentas em cartões brancos.
+   Tema único e claro por escolha: a orientação do material pede texto escuro e alto contraste. */
+:root{
+  --paper:#F6F9FC;
+  --surface:#FFFFFF;
+  --ink:#11263A;
+  --ink-2:#43566A;
+  --line:#DAE4EC;
+  --line-strong:#8EA1B2;
+  --grid-minor:#DDEBF6;
+  --grid-major:#B1D2EC;
+  --trace:#E75220;
+  --trace-ink:#B53B12;
+  --brand-blue:#489DD3;
+  --accent:#14395E;
+  --accent-soft:#E4EEF7;
+  --accent-ink:#FFFFFF;
+  --alert:#B3261E;
+  --alert-soft:#FCEBEA;
+  --ok:#1C6638;
+  --ok-soft:#E4F1E8;
+  --warn:#7A5000;
+  --warn-soft:#FCF1DC;
+  --body-fill:#E9EFF4;
+  --body-shade:#D3DEE8;
+  --f-display:"Bricolage Grotesque","Atkinson Hyperlegible",system-ui,sans-serif;
+  --f-body:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace;
+  --scale:1;
+  color-scheme:light;
+}
+html{font-size:calc(112.5% * var(--scale));}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:1rem;line-height:1.6;-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);}
+.wrap{max-width:44rem;margin-inline:auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));}
+h1,h2{font-family:var(--f-display);text-wrap:balance;line-height:1.1;margin:0;color:var(--ink);}
+h1{font-size:min(9vw,4rem);font-weight:800;letter-spacing:-0.025em;overflow-wrap:break-word;}
+h2{font-size:1.55rem;font-weight:800;letter-spacing:-0.01em;}
+h3{font-size:1.08rem;margin:0;line-height:1.3;text-wrap:balance;}
+p{margin:0;}
+a{color:var(--accent);text-underline-offset:.15em;}
+strong{font-weight:700;}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px;}
+.eyebrow{font-family:var(--f-mono);font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;color:var(--trace-ink);font-weight:500;}
+.muted{color:var(--ink-2);}
+.small{font-size:.88rem;}
+.ref{font-family:var(--f-mono);font-size:.78em;color:var(--ink-2);white-space:nowrap;}
+
+/* Cabeçalho */
+.pet-logo{display:block;aspect-ratio:520/146;height:46px;width:auto;background:#FFFFFF url("data:image/webp;base64,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") center/contain no-repeat;flex-shrink:0;}
+.brandbar{background:var(--surface);border-bottom:1px solid var(--line);}
+.brand-in{display:flex;align-items:center;justify-content:space-between;gap:.9rem;padding-block:.55rem;}
+.brand-inst{font-size:.76rem;line-height:1.35;color:var(--ink-2);text-align:right;min-width:0;}
+.brand-inst b{color:var(--ink);}
+.foot-brand{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}
+@media (max-width:640px){.pet-logo{height:38px;}.brand-inst{font-size:.68rem;}}
+.hero-in{padding-block:1.75rem 1.25rem;display:grid;gap:.7rem;}
+.hero-in>*{min-width:0;}
+.inst{font-size:.84rem;color:var(--ink-2);line-height:1.45;}
+.lede{font-size:1.08rem;color:var(--ink-2);max-width:38rem;}
+.strip-wrap{border-block:1px solid var(--grid-major);background:var(--paper);}
+#strip{display:block;width:100%;height:clamp(120px,17vw,180px);}
+.trace{fill:none;stroke:var(--trace);stroke-width:2.2;stroke-linejoin:round;stroke-linecap:round;}
+.strip-label{font-family:var(--f-mono);font-size:11px;fill:var(--ink-2);}
+.dot{fill:var(--trace);}
+
+/* Barra fixa */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--line);}
+.bar-in{display:flex;align-items:center;justify-content:space-between;gap:.6rem;padding-block:.55rem;flex-wrap:wrap;}
+.seg{display:flex;gap:2px;padding:3px;background:var(--paper);border:1px solid var(--line);border-radius:999px;min-width:0;}
+.seg button{border:0;background:transparent;font:inherit;font-weight:700;font-size:.9rem;color:var(--ink-2);padding:.4rem .9rem;border-radius:999px;min-height:42px;cursor:pointer;white-space:nowrap;}
+.seg button[aria-selected="true"]{background:var(--accent);color:var(--accent-ink);}
+.fontctl{display:flex;gap:4px;flex-shrink:0;}
+.fontctl button{width:42px;min-height:42px;border:1px solid var(--line);background:var(--surface);border-radius:10px;font:inherit;font-weight:700;font-size:.9rem;color:var(--ink);cursor:pointer;}
+.fontctl button:disabled{color:var(--line-strong);cursor:default;}
+
+/* Painéis e seções */
+.panel>.wrap{padding-block:1rem 2rem;display:grid;gap:.55rem;}
+.intro{font-size:1.02rem;color:var(--ink-2);}
+.sec{display:grid;gap:1rem;min-width:0;}
+.sec-head{display:flex;align-items:flex-start;justify-content:space-between;gap:.75rem;}
+.sec-head h2{min-width:0;}
+.listen{flex-shrink:0;display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--accent);color:var(--accent);background:var(--surface);border-radius:999px;padding:.3rem .85rem;font:inherit;font-size:.84rem;font-weight:700;min-height:40px;cursor:pointer;}
+.listen svg{width:1.05em;height:1.05em;}
+.listen[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);}
+ul.plain{margin:0;padding-left:1.2rem;display:grid;gap:.55rem;}
+ul.plain li::marker{color:var(--trace);}
+.note{font-size:.92rem;color:var(--ink-2);}
+.callout{border-left:4px solid var(--trace);padding:.35rem 0 .35rem 1rem;display:grid;gap:.35rem;}
+.callout.accent{border-left-color:var(--accent);}
+
+.facts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.45rem;}
+.facts li{font-weight:700;font-size:.9rem;padding:.3rem .8rem;border-radius:999px;background:var(--accent-soft);color:var(--accent);}
+
+figure{margin:0;display:grid;gap:.6rem;min-width:0;}
+figure svg{display:block;width:100%;height:auto;}
+figcaption{font-size:.88rem;color:var(--ink-2);}
+.fig-frame{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.75rem;}
+.beat-fig svg{max-width:30rem;margin-inline:auto;}
+.lbl{font-family:var(--f-display);font-weight:800;font-size:17px;fill:var(--ink);}
+.ann{font-family:var(--f-mono);font-size:9px;font-weight:600;fill:var(--ink);}
+.brk{fill:none;stroke:var(--accent);stroke-width:1.4;}
+.legend{display:grid;grid-template-columns:auto 1fr;gap:.45rem 1rem;margin:0;}
+.legend dt{font-family:var(--f-display);font-weight:800;color:var(--trace);}
+.legend dd{margin:0;}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1rem 1.1rem;display:grid;gap:.85rem;min-width:0;}
+
+/* Checklists */
+.check{list-style:none;margin:0;padding:0;display:grid;gap:.5rem;}
+.check label{display:flex;gap:.75rem;align-items:flex-start;padding:.7rem .85rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);cursor:pointer;}
+.check input{width:1.35rem;height:1.35rem;margin:.18rem 0 0;accent-color:var(--accent);flex-shrink:0;cursor:pointer;}
+.check label:has(input:checked){border-color:var(--accent);background:var(--accent-soft);}
+.progress{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.9rem;color:var(--ink-2);}
+.textbtn{background:none;border:0;padding:.3rem 0;font:inherit;font-size:.9rem;font-weight:700;color:var(--accent);text-decoration:underline;text-underline-offset:.15em;cursor:pointer;min-height:40px;}
+
+/* Passo a passo */
+.steps{list-style:none;margin:0;padding:0;counter-reset:s;display:grid;}
+.steps li{counter-increment:s;display:grid;grid-template-columns:2.5rem minmax(0,1fr);gap:.9rem;padding-bottom:1.15rem;position:relative;}
+.steps li::before{content:counter(s);font-family:var(--f-mono);font-weight:600;width:2.5rem;height:2.5rem;border-radius:50%;display:grid;place-items:center;background:var(--surface);border:2px solid var(--trace);color:var(--trace-ink);}
+.steps li::after{content:"";position:absolute;left:calc(1.25rem - 1px);top:2.6rem;bottom:.25rem;width:2px;background:var(--grid-major);}
+.steps li:last-child{padding-bottom:0;}
+.steps li:last-child::after{display:none;}
+.steps .st{display:grid;gap:.2rem;padding-top:.3rem;}
+
+/* Figura do corpo */
+.body-fig svg{max-width:19rem;margin-inline:auto;}
+.limb-o{fill:none;stroke:var(--line-strong);stroke-width:27;stroke-linecap:round;}
+.limb-f{fill:none;stroke:var(--body-fill);stroke-width:23;stroke-linecap:round;}
+.part{fill:var(--body-fill);stroke:var(--line-strong);stroke-width:2;}
+.sternum{fill:var(--body-shade);}
+.ics{stroke:var(--line-strong);stroke-width:1;stroke-dasharray:3 3;}
+.ics-t{font-family:var(--f-mono);font-size:9px;fill:var(--ink-2);}
+.side-t{font-family:var(--f-body);font-size:11px;font-weight:700;fill:var(--ink-2);}
+.el-t{font-family:var(--f-mono);font-size:9.5px;font-weight:600;pointer-events:none;}
+.el .ring{fill:none;stroke:transparent;stroke-width:3;}
+.el.tap{cursor:pointer;outline:none;}
+.el.tap:hover .ring{stroke:var(--line-strong);}
+.el.tap:focus-visible .ring{stroke:var(--accent);stroke-dasharray:3 2;}
+.el.on .ring{stroke:var(--accent);}
+.el-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:1rem;align-items:start;}
+@media (max-width:640px){.el-grid{grid-template-columns:minmax(0,1fr);}}
+.el-info{align-content:start;}
+.el-info .name{font-family:var(--f-display);font-size:1.3rem;font-weight:800;line-height:1.15;}
+.swatches{display:flex;flex-wrap:wrap;gap:.4rem 1rem;font-size:.9rem;}
+.sw{display:inline-flex;align-items:center;gap:.4rem;}
+.sw i{width:1rem;height:1rem;border-radius:50%;border:1px solid var(--line-strong);display:inline-block;flex-shrink:0;}
+
+/* Mitos */
+.myths{display:grid;gap:.5rem;}
+.myth{border:1px solid var(--line);border-radius:12px;background:var(--surface);}
+.myth summary{list-style:none;padding:.8rem 1rem;cursor:pointer;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:44px;}
+.myth summary::-webkit-details-marker{display:none;}
+.myth summary::after{content:"Ver resposta";font-size:.8rem;color:var(--accent);white-space:nowrap;flex-shrink:0;}
+.myth[open] summary::after{content:"Fechar";}
+.myth .ans{padding:0 1rem 1rem;}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:.12rem .5rem;border-radius:6px;margin-right:.35rem;}
+.tag.mito{background:var(--alert-soft);color:var(--alert);}
+.tag.verdade{background:var(--ok-soft);color:var(--ok);}
+
+/* Alerta */
+.alert{background:var(--alert-soft);border:2px solid var(--alert);border-radius:16px;padding:1.2rem 1.1rem;display:grid;gap:.9rem;}
+.alert h2{color:var(--alert);}
+.call{display:flex;align-items:center;gap:.9rem;flex-wrap:wrap;background:var(--surface);border-radius:12px;padding:.8rem 1rem;}
+.call .num{font-family:var(--f-display);font-weight:800;font-size:2.8rem;line-height:1;color:var(--alert);font-variant-numeric:tabular-nums;}
+
+/* Links */
+.links{list-style:none;padding:0;margin:0;display:grid;gap:.55rem;}
+.links a{display:grid;gap:.1rem;padding:.75rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--surface);text-decoration:none;color:var(--ink);}
+.links a:hover{border-color:var(--accent);}
+.links .t{font-weight:700;}
+.links .u{font-family:var(--f-mono);font-size:.78rem;color:var(--accent);overflow-wrap:anywhere;}
+.links .d{font-size:.9rem;color:var(--ink-2);}
+
+/* Quiz */
+.quiz{display:grid;gap:.85rem;}
+.q{border:1px solid var(--line);border-radius:14px;background:var(--surface);padding:1rem;display:grid;gap:.6rem;min-width:0;}
+.qt{font-weight:700;}
+.opts{display:grid;gap:.45rem;}
+.opt{text-align:left;font:inherit;padding:.6rem .85rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--surface);color:var(--ink);cursor:pointer;min-height:44px;}
+.opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft);}
+.opt:disabled{cursor:default;opacity:1;color:var(--ink-2);}
+.opt.right{background:var(--ok-soft);border-color:var(--ok);color:var(--ok);font-weight:700;}
+.opt.wrong{background:var(--alert-soft);border-color:var(--alert);color:var(--alert);}
+.fb{font-size:.95rem;}
+.ok-t{color:var(--ok);}
+.bad-t{color:var(--alert);}
+.score-row{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;font-weight:700;}
+
+/* Tabelas */
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface);}
+table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.9rem;}
+th,td{text-align:left;vertical-align:top;padding:.6rem .8rem;border-bottom:1px solid var(--line);}
+th{font-family:var(--f-mono);font-weight:500;font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-2);}
+tbody tr:last-child td{border-bottom:0;}
+details.more{border:1px solid var(--line);border-radius:12px;background:var(--surface);}
+details.more>summary{cursor:pointer;padding:.7rem 1rem;font-weight:700;color:var(--accent);min-height:44px;}
+details.more[open]>summary{border-bottom:1px solid var(--line);}
+details.more .tbl-wrap{border:0;border-radius:0 0 12px 12px;}
+
+/* Valores de referência */
+.refvals{display:grid;grid-template-columns:auto minmax(0,1fr);margin:0;border:1px solid var(--line);border-radius:12px;background:var(--surface);overflow:hidden;}
+.refvals dt,.refvals dd{margin:0;padding:.55rem .85rem;border-bottom:1px solid var(--line);}
+.refvals dt{font-weight:700;}
+.refvals dd{font-family:var(--f-mono);font-size:.9rem;font-variant-numeric:tabular-nums;}
+.refvals dt:nth-last-of-type(1),.refvals dd:nth-last-of-type(1){border-bottom:0;}
+
+/* Ferramentas */
+.tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1rem;}
+.tool h3{font-family:var(--f-display);font-weight:800;font-size:1.15rem;}
+.field{display:grid;gap:.25rem;}
+.field label{font-weight:700;font-size:.9rem;}
+.row{display:flex;gap:.5rem;flex-wrap:wrap;}
+input[type="text"],select{font:inherit;padding:.5rem .7rem;border:1px solid var(--line-strong);border-radius:10px;background:var(--surface);color:var(--ink);min-height:44px;min-width:0;}
+input[type="text"]{width:7rem;font-family:var(--f-mono);font-variant-numeric:tabular-nums;}
+.out{font-family:var(--f-mono);font-size:1.55rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1.2;}
+.pill{display:inline-block;padding:.2rem .7rem;border-radius:999px;font-weight:700;font-size:.88rem;}
+.pill.ok{background:var(--ok-soft);color:var(--ok);}
+.pill.warn{background:var(--warn-soft);color:var(--warn);}
+.pill.bad{background:var(--alert-soft);color:var(--alert);}
+.mini{width:100%;min-width:0;font-size:.88rem;}
+.mini td{padding:.35rem .5rem;}
+.mini td:last-child{font-family:var(--f-mono);text-align:right;font-variant-numeric:tabular-nums;}
+.mini tr.use td{font-weight:700;background:var(--accent-soft);}
+
+/* Versão para usuários: texto maior e blocos curtos */
+.panel-u{font-size:1.08rem;}
+.panel-u h2{font-size:1.75rem;}
+.panel-u h3{font-size:1.12rem;}
+.hello{background:var(--accent-soft);border-radius:16px;padding:1rem 1.1rem;display:grid;gap:.35rem;}
+.big{font-size:1.22rem;line-height:1.45;}
+.qa{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:.6rem;}
+.qa>div{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.85rem 1rem;display:grid;gap:.15rem;align-content:start;}
+.qa-q{font-family:var(--f-display);font-weight:800;font-size:1.2rem;line-height:1.25;}
+.qa-a strong{color:var(--ok);}
+.todo{list-style:none;margin:0;padding:0;display:grid;gap:.5rem;}
+.todo li{display:grid;grid-template-columns:2rem minmax(0,1fr);gap:.7rem;align-items:start;padding:.7rem .85rem;background:var(--surface);border:1px solid var(--line);border-radius:12px;}
+.todo li::before{content:"✓";width:2rem;height:2rem;border-radius:50%;display:grid;place-items:center;background:var(--ok-soft);color:var(--ok);font-weight:700;}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:.6rem;}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:.9rem 1rem;display:grid;gap:.5rem;align-content:start;}
+.box.bad h3{color:var(--alert);}
+.box.good h3{color:var(--ok);}
+
+/* Temas em faixas que abrem com um toque */
+.acc{background:var(--surface);border:1px solid var(--line);border-radius:14px;scroll-margin-top:calc(env(safe-area-inset-top,0px) + 4.25rem);}
+.acc>summary{list-style:none;display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:.75rem;align-items:center;padding:.7rem .9rem;cursor:pointer;min-height:56px;border-radius:14px;}
+.acc>summary::-webkit-details-marker{display:none;}
+.acc>summary h2{grid-column:1;font-size:1.2rem;line-height:1.2;}
+.panel-u .acc>summary h2{font-size:1.28rem;}
+.acc-sub{grid-column:1;font-size:.86rem;color:var(--ink-2);line-height:1.3;}
+.acc>summary::after{content:"";grid-column:2;grid-row:1 / span 2;width:.6rem;height:.6rem;border-right:2.5px solid var(--accent);border-bottom:2.5px solid var(--accent);transform:rotate(45deg);margin:0 .35rem .3rem 0;transition:transform .2s;}
+.acc[open]>summary::after{transform:rotate(-135deg);margin:.3rem .35rem 0 0;}
+.acc[open]>summary{border-bottom:1px solid var(--line);border-radius:14px 14px 0 0;}
+.acc-body{padding:.85rem .9rem 1rem;display:grid;gap:.8rem;min-width:0;}
+.acc-tools{display:flex;justify-content:flex-end;margin-bottom:-.3rem;}
+.acc-alert{background:var(--alert-soft);border:2px solid var(--alert);}
+.acc-alert>summary h2{color:var(--alert);}
+.acc-alert[open]>summary{border-bottom-color:var(--alert);}
+.acc-alert>summary::after{border-color:var(--alert);}
+.acc .fig-frame{padding:.5rem;}
+.sos{display:flex;align-items:center;gap:.7rem;background:var(--alert-soft);border:1px solid var(--alert);border-radius:12px;padding:.45rem .8rem;font-size:.95rem;line-height:1.35;}
+.sos .num{font-family:var(--f-display);font-weight:800;font-size:1.6rem;color:var(--alert);line-height:1;}
+.more .refs{padding:.8rem 1rem .9rem 2.3rem;}
+@media (prefers-reduced-motion:reduce){.acc>summary::after{transition:none;}}
+
+/* Ajustes para celular */
+@media (max-width:640px){
+  .hero-in{padding-block:.9rem .6rem;gap:.3rem;}
+  .inst{font-size:.72rem;}
+  .eyebrow{font-size:.68rem;}
+  .lede{font-size:.95rem;line-height:1.45;}
+  #strip{height:76px;}
+  .strip-label{font-size:16px;}
+  .bar-in{padding-block:.4rem;}
+  .hello{padding:.65rem .85rem;font-size:.98rem;}
+  .big{font-size:1.1rem;}
+  .qa{grid-template-columns:repeat(2,minmax(0,1fr));gap:.45rem;}
+  .qa>div{padding:.6rem .7rem;}
+  .qa-q{font-size:1.02rem;}
+  .qa-a{font-size:.94rem;line-height:1.4;}
+  .todo{gap:.35rem;}
+  .todo li{padding:.5rem .65rem;grid-template-columns:1.6rem minmax(0,1fr);gap:.55rem;}
+  .todo li::before{width:1.6rem;height:1.6rem;font-size:.85rem;}
+  .steps li{grid-template-columns:2.1rem minmax(0,1fr);gap:.7rem;padding-bottom:.75rem;}
+  .steps li::before{width:2.1rem;height:2.1rem;font-size:.9rem;}
+  .steps li::after{left:calc(1.05rem - 1px);top:2.2rem;}
+  .steps .st{padding-top:.15rem;gap:.1rem;}
+  .body-fig svg{max-width:12.5rem;}
+  .el-grid .body-fig svg{max-width:15rem;}
+  .check{gap:.35rem;}
+  .check label{padding:.5rem .65rem;font-size:.95rem;}
+  ul.plain{gap:.35rem;}
+  .links a{padding:.55rem .8rem;}
+  .two{gap:.45rem;}
+  .box{padding:.7rem .8rem;gap:.35rem;}
+  .call{padding:.6rem .8rem;}
+  .call .num{font-size:2.2rem;}
+  .q{padding:.75rem;gap:.45rem;}
+  .opt{padding:.5rem .75rem;}
+  .tools{gap:.6rem;}
+  .tool{padding:.8rem .85rem;gap:.6rem;}
+  .out{font-size:1.35rem;}
+  .foot .wrap{padding-block:1.6rem 2rem;gap:1.2rem;}
+  .foot h2{font-size:1.25rem;}
+  .meta{font-size:.84rem;}
+}
+
+/* Rodapé */
+.foot{border-top:1px solid var(--grid-major);background:var(--surface);}
+.foot .wrap{padding-block:2.5rem 3rem;display:grid;gap:2rem;}
+.meta{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.5rem 1rem;margin:0;font-size:.92rem;}
+.meta dt{font-weight:700;}
+.meta dd{margin:0;}
+@media (max-width:480px){.meta{grid-template-columns:minmax(0,1fr);gap:.1rem;}.meta dd{margin-bottom:.55rem;}}
+.refs{margin:0;padding-left:1.4rem;display:grid;gap:.55rem;font-size:.86rem;}
+.refs a{overflow-wrap:anywhere;}
+
+@media (prefers-reduced-motion:reduce){#strip-gap,#strip-dot{display:none;}}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <pattern id="grid-a" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="#F6F9FC"/>
+      <path d="M4 0V20M8 0V20M12 0V20M16 0V20M0 4H20M0 8H20M0 12H20M0 16H20" stroke="#DDEBF6" stroke-width=".8"/>
+      <path d="M0 0V20M0 0H20" stroke="#B1D2EC" stroke-width="1.3"/>
+    </pattern>
+    <pattern id="grid-mm" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="#FFFFFF"/>
+      <path d="M10 0V50M20 0V50M30 0V50M40 0V50M0 10H50M0 20H50M0 30H50M0 40H50" stroke="#DDEBF6" stroke-width=".7"/>
+      <path d="M0 0V50M0 0H50" stroke="#B1D2EC" stroke-width="1.2"/>
+    </pattern>
+  </defs>
+</svg>
+
+<header class="hero">
+  <div class="brandbar"><div class="wrap brand-in">
+    <span class="pet-logo" role="img" aria-label="PET-Saúde: Informação e Saúde Digital"></span>
+    <p class="brand-inst"><b>UFRR</b> · Universidade Federal de Roraima<br><b>HU-UFRR</b> · Hospital Universitário</p>
+  </div></div>
+  <div class="wrap hero-in">
+    <p class="eyebrow">Mutirão de Saúde · HU-UFRR · 7 de novembro de 2026</p>
+    <h1>Eletrocardiograma</h1>
+    <p class="lede">Um guia simples sobre o exame do coração. Escolha abaixo: <strong>Para você</strong>, se vai fazer o exame, ou <strong>Profissionais</strong>.</p>
+  </div>
+  <div class="strip-wrap">
+    <svg id="strip" viewBox="0 0 600 120" role="img" aria-label="Traçado de eletrocardiograma normal, com batimentos regulares, no papel milimetrado do exame">
+      <rect id="strip-bg" width="600" height="120" fill="url(#grid-a)"/>
+      <path class="trace" d="M0 78H8V42H28V78H36"/>
+      <path id="strip-trace" class="trace" d=""/>
+      <rect id="strip-gap" x="-40" y="0" width="18" height="120" fill="url(#grid-a)"/>
+      <circle id="strip-dot" class="dot" cx="-40" cy="78" r="3.4"/>
+      <text class="strip-label" x="44" y="15">DII · 25 mm/s · 10 mm/mV</text>
+    </svg>
+  </div>
+</header>
+
+<nav class="bar" aria-label="Versão do guia e tamanho do texto">
+  <div class="wrap bar-in">
+    <div class="seg" role="tablist" aria-label="Versão do guia">
+      <button type="button" role="tab" id="tab-usuarios" aria-controls="painel-usuarios" aria-selected="true" data-view="usuarios">Para você</button>
+      <button type="button" role="tab" id="tab-profissionais" aria-controls="painel-profissionais" aria-selected="false" tabindex="-1" data-view="profissionais">Profissionais</button>
+    </div>
+    <div class="fontctl" role="group" aria-label="Tamanho do texto">
+      <button type="button" id="font-dec" aria-label="Diminuir o texto">A−</button>
+      <button type="button" id="font-inc" aria-label="Aumentar o texto">A+</button>
+    </div>
+  </div>
+</nav>
+
+<main>
+<!-- ===================== VERSÃO USUÁRIOS ===================== -->
+<section class="panel panel-u" id="painel-usuarios" role="tabpanel" aria-labelledby="tab-usuarios">
+  <div class="wrap">
+
+    <div class="hello">
+      <p><strong>Toque em um tema para abrir.</strong> Dentro de cada tema, toque em <strong>Ouvir</strong> para escutar.</p>
+    </div>
+    <p class="sos"><span class="num">192</span><span>Dor forte no peito que não passa? <strong>Ligue para o SAMU.</strong></span></p>
+
+    <details class="acc" id="sec-oque" data-group="acc-u" open>
+      <summary><h2 id="h-oque">O que é?</h2><span class="acc-sub">Um exame do coração</span></summary>
+      <div class="acc-body">
+      <div class="acc-tools"><button type="button" class="listen" data-for="sec-oque" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg><span class="lt">Ouvir</span></button></div>
+      
+      <p class="big">É um exame que mostra como o seu coração está batendo.</p>
+      <p>O aparelho faz um desenho dos batimentos do coração. O médico olha esse desenho para ver se está tudo bem.</p>
+      <figure>
+        <div class="fig-frame" id="beat-user"></div>
+        <figcaption>Este é o desenho que o exame faz. Cada pico é uma batida do coração.</figcaption>
+      </figure>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-duvidas" data-group="acc-u">
+      <summary><h2 id="h-duvidas">Dúvidas comuns</h2><span class="acc-sub">Dói? Precisa de jejum? Demora?</span></summary>
+      <div class="acc-body">
+      <div class="acc-tools"><button type="button" class="listen" data-for="sec-duvidas" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg><span class="lt">Ouvir</span></button></div>
+      
+      <div class="qa">
+        <div><p class="qa-q">Dói?</p><p class="qa-a"><strong>Não.</strong> O exame não dói.</p></div>
+        <div><p class="qa-q">Dá choque?</p><p class="qa-a"><strong>Não.</strong> O aparelho só escuta o coração. Ele não solta choque.</p></div>
+        <div><p class="qa-q">Preciso ficar em jejum?</p><p class="qa-a"><strong>Não.</strong> Pode comer normalmente.</p></div>
+        <div><p class="qa-q">Demora?</p><p class="qa-a"><strong>Pouco.</strong> Mais ou menos 10 minutos.</p></div>
+        <div><p class="qa-q">Posso tomar meus remédios?</p><p class="qa-a"><strong>Sim.</strong> Tome como sempre, se o médico não mandou parar.</p></div>
+        <div><p class="qa-q">Grávida pode fazer?</p><p class="qa-a"><strong>Pode.</strong> O exame não tem radiação.</p></div>
+        <div><p class="qa-q">Quem usa marca-passo pode fazer?</p><p class="qa-a"><strong>Pode.</strong> Só avise a equipe antes.</p></div>
+      </div>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-serve" data-group="acc-u">
+      <summary><h2 id="h-serve">Para que serve?</h2><span class="acc-sub">Por que o médico pede</span></summary>
+      <div class="acc-body">
+      <div class="acc-tools"><button type="button" class="listen" data-for="sec-serve" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg><span class="lt">Ouvir</span></button></div>
+      
+      <ul class="plain">
+        <li>Ver se o coração bate no ritmo certo.</li>
+        <li>Ajudar o médico a entender dor no peito, falta de ar, tontura, desmaio ou coração acelerado.</li>
+        <li>Acompanhar quem tem pressão alta, diabetes, doença de Chagas ou problema no coração.</li>
+        <li>Ver como está o coração antes de uma cirurgia.</li>
+      </ul>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-antes" data-group="acc-u">
+      <summary><h2 id="h-antes">Antes do exame</h2><span class="acc-sub">Como se preparar</span></summary>
+      <div class="acc-body">
+      <div class="acc-tools"><button type="button" class="listen" data-for="sec-antes" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg><span class="lt">Ouvir</span></button></div>
+      
+      <ul class="todo">
+        <li>Venha com roupa fácil de abrir na frente.</li>
+        <li>Não passe creme no peito, nos braços e nas pernas.</li>
+        <li>Traga seus remédios ou a receita.</li>
+        <li>Se tiver exames antigos do coração, traga também.</li>
+        <li>Na hora do exame, tire o celular do bolso.</li>
+      </ul>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-como" data-group="acc-u">
+      <summary><h2 id="h-como">Como é o exame?</h2><span class="acc-sub">Passo a passo</span></summary>
+      <div class="acc-body">
+      <div class="acc-tools"><button type="button" class="listen" data-for="sec-como" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg><span class="lt">Ouvir</span></button></div>
+      
+      <ol class="steps">
+        <li><div class="st"><h3>Você deita na maca</h3><p>Tira a roupa da cintura para cima. Se quiser, peça para alguém ficar com você.</p></div></li>
+        <li><div class="st"><h3>A equipe cola 10 adesivos</h3><p>São 6 no peito e 4 nos braços e pernas. Eles não doem.</p></div></li>
+        <li><div class="st"><h3>Você fica parado e quieto</h3><p>Respire normal e não fale. Leva só alguns segundos.</p></div></li>
+        <li><div class="st"><h3>Pronto!</h3><p>A equipe tira os adesivos. A pele pode ficar um pouco vermelha, mas passa. Você já pode ir embora.</p></div></li>
+      </ol>
+      <figure class="body-fig">
+        <div class="fig-frame" id="body-user"></div>
+        <figcaption>Onde ficam os adesivos: 6 no peito e 4 nos braços e pernas.</figcaption>
+      </figure>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-depois" data-group="acc-u">
+      <summary><h2 id="h-depois">Depois do exame</h2><span class="acc-sub">O que fazer com o resultado</span></summary>
+      <div class="acc-body">
+      <div class="acc-tools"><button type="button" class="listen" data-for="sec-depois" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg><span class="lt">Ouvir</span></button></div>
+      
+      <ul class="plain">
+        <li>Um médico vai olhar o desenho do seu coração e explicar o resultado.</li>
+        <li>Leve o resultado na sua próxima consulta.</li>
+        <li>Guarde o papel ou tire uma foto com o celular.</li>
+        <li>Não mande o seu exame em grupos de mensagem. Ele é só seu.</li>
+      </ul>
+      </div>
+    </details>
+
+    <details class="acc acc-alert" id="sec-alerta" data-group="acc-u">
+      <summary><h2 id="h-alerta">Quando pedir ajuda</h2><span class="acc-sub">Dor forte no peito: ligue 192</span></summary>
+      <div class="acc-body">
+      <div class="acc-tools"><button type="button" class="listen" data-for="sec-alerta" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg><span class="lt">Ouvir</span></button></div>
+      
+      <p class="big">Peça ajuda na hora se sentir:</p>
+      <ul class="plain">
+        <li>dor ou aperto no peito que não passa;</li>
+        <li>dor que vai para o braço, as costas ou o queixo;</li>
+        <li>falta de ar de repente;</li>
+        <li>desmaio.</li>
+      </ul>
+      <div class="call"><span class="num">192</span><span><strong>Ligue para o SAMU</strong> ou vá ao pronto-socorro. Não espere passar.</span></div>
+      <p><strong>Está aqui no mutirão?</strong> Chame alguém da equipe agora.</p>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-fontes" data-group="acc-u">
+      <summary><h2 id="h-fontes">Cuidado com a internet</h2><span class="acc-sub">Como saber se é verdade</span></summary>
+      <div class="acc-body">
+      <div class="acc-tools"><button type="button" class="listen" data-for="sec-fontes" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg><span class="lt">Ouvir</span></button></div>
+      
+      <p class="big">Nem tudo que chega no celular é verdade.</p>
+      <div class="two">
+        <div class="box bad">
+          <h3>Desconfie de:</h3>
+          <ul class="plain">
+            <li>mensagem sem nome de quem escreveu;</li>
+            <li>promessa de cura rápida;</li>
+            <li>quem vende remédio ou chá “milagroso”.</li>
+          </ul>
+        </div>
+        <div class="box good">
+          <h3>Confie em:</h3>
+          <ul class="plain">
+            <li>seu médico, enfermeiro ou agente de saúde;</li>
+            <li>Ministério da Saúde;</li>
+            <li>hospitais e universidades.</li>
+          </ul>
+        </div>
+      </div>
+      <ul class="links">
+        <li><a href="https://www.gov.br/saude/pt-br" target="_blank" rel="noopener"><span class="t">Ministério da Saúde</span><span class="d">Site oficial do governo sobre saúde.</span><span class="u">gov.br/saude</span></a></li>
+        <li><a href="https://www.gov.br/hubrasil/pt-br/hospitais-universitarios/regiao-norte/hu-ufrr" target="_blank" rel="noopener"><span class="t">Hospital Universitário da UFRR (HU-UFRR)</span><span class="d">Serviços e notícias do hospital.</span><span class="u">gov.br/hubrasil · HU-UFRR</span></a></li>
+      </ul>
+      <p><strong>Meu SUS Digital</strong> é o aplicativo oficial do Ministério da Saúde. Baixe só na loja oficial do seu celular.</p>
+      <p>Ficou com dúvida? Pergunte a um profissional de saúde.</p>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-quiz-u" data-group="acc-u">
+      <summary><h2 id="h-quiz-u">Vamos ver se ficou claro?</h2><span class="acc-sub">5 perguntas rápidas</span></summary>
+      <div class="acc-body">
+      
+      <div class="quiz" id="quiz-usuarios"></div>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<!-- ===================== VERSÃO PROFISSIONAIS ===================== -->
+<section class="panel" id="painel-profissionais" role="tabpanel" aria-labelledby="tab-profissionais" hidden>
+  <div class="wrap">
+
+    <p class="intro">ECG de 12 derivações em adultos, com base na Diretriz da SBC (2022). Números entre colchetes indicam as referências no fim da página.</p>
+
+    <details class="acc" id="sec-ind" data-group="acc-p" open>
+      <summary><h2 id="h-ind">Indicações e prioridade</h2><span class="acc-sub">Dor torácica: ECG em até 10 min</span></summary>
+      <div class="acc-body">
+      
+      <div class="callout"><p><strong>Dor torácica:</strong> registre e mostre o ECG de 12 derivações ao médico em até 10 minutos do primeiro contato. <span class="ref">[5]</span></p></div>
+      <ul class="plain">
+        <li>Dor torácica, dispneia, síncope ou pré-síncope, palpitações.</li>
+        <li>Investigação e seguimento de arritmias, distúrbios de condução e cardiopatias, incluindo a doença de Chagas. <span class="ref">[1]</span></li>
+        <li>Suspeita de distúrbio eletrolítico (potássio, cálcio) e uso de fármacos que alteram o QT.</li>
+        <li>Avaliação pré-operatória, conforme o risco clínico.</li>
+        <li>Pessoas assintomáticas: a diretriz da SBC cita indicação IIb na população geral e IIa em hipertensos e/ou diabéticos. <span class="ref">[1]</span></li>
+      </ul>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-aquis" data-group="acc-p">
+      <summary><h2 id="h-aquis">Registro: checklist de qualidade</h2><span class="acc-sub">12 itens para conferir</span></summary>
+      <div class="acc-body">
+      
+      <p>Use durante o exame. Os itens marcados ficam guardados neste aparelho.</p>
+      <ul class="check" data-key="registro-prof">
+        <li><label><input type="checkbox" id="pp1"><span>Confirme a identidade com dois identificadores (nome completo e data de nascimento).</span></label></li>
+        <li><label><input type="checkbox" id="pp2"><span>Explique o exame, peça consentimento e ofereça acompanhante. <span class="ref">[2]</span></span></label></li>
+        <li><label><input type="checkbox" id="pp3"><span>Garanta privacidade e exponha só o necessário.</span></label></li>
+        <li><label><input type="checkbox" id="pp4"><span>Paciente em decúbito, relaxado, braços ao lado do corpo, sem falar. <span class="ref">[2]</span></span></label></li>
+        <li><label><input type="checkbox" id="pp5"><span>Peça a retirada de objetos metálicos e afaste o celular. <span class="ref">[1]</span></span></label></li>
+        <li><label><input type="checkbox" id="pp6"><span>Prepare a pele: limpe, seque e faça tricotomia nos pontos, se necessário.</span></label></li>
+        <li><label><input type="checkbox" id="pp7"><span>Use eletrodos dentro da validade, com gel íntegro. Não espalhe gel em faixa contínua no precórdio. <span class="ref">[1]</span></span></label></li>
+        <li><label><input type="checkbox" id="pp8"><span>Posicione 4 eletrodos nos membros e 6 no precórdio, por referência anatômica.</span></label></li>
+        <li><label><input type="checkbox" id="pp9"><span>Confira velocidade de 25 mm/s, calibração de 10 mm/mV e filtros de 0,05 a 150 Hz (adultos). <span class="ref">[1, 3]</span></span></label></li>
+        <li><label><input type="checkbox" id="pp10"><span>Observe a linha de base antes de registrar e corrija artefatos.</span></label></li>
+        <li><label><input type="checkbox" id="pp11"><span>Anote no traçado: data, hora, sintomas no momento e qualquer posição fora do padrão. <span class="ref">[2]</span></span></label></li>
+        <li><label><input type="checkbox" id="pp12"><span>Se houver dor torácica, entregue o ECG ao médico imediatamente.</span></label></li>
+      </ul>
+      <div class="progress"><span class="count" aria-live="polite"></span><button type="button" class="textbtn reset">Desmarcar tudo</button></div>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-eletrodos" data-group="acc-p">
+      <summary><h2 id="h-eletrodos">Posição dos eletrodos</h2><span class="acc-sub">Mapa interativo e cores</span></summary>
+      <div class="acc-body">
+      
+      <p>Toque em um eletrodo para ver o ponto anatômico e a cor. As cores seguem o padrão IEC, usado na diretriz da SBC <span class="ref">[1]</span>. Alguns aparelhos usam o padrão AHA, então confira sempre a etiqueta do cabo.</p>
+      <div class="el-grid">
+        <figure class="body-fig">
+          <div class="fig-frame" id="body-pro"></div>
+          <figcaption>Vista anterior. EIC: espaço intercostal.</figcaption>
+        </figure>
+        <div class="card el-info" id="el-info" aria-live="polite"></div>
+      </div>
+      <details class="more">
+        <summary>Tabela com todas as posições e cores</summary>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th scope="col">Eletrodo</th><th scope="col">Posição</th><th scope="col">IEC</th><th scope="col">AHA</th></tr></thead>
+            <tbody id="el-table"></tbody>
+          </table>
+        </div>
+      </details>
+      <div class="callout accent">
+        <p><strong>Derivações adicionais.</strong> V3R e V4R (lado direito, em espelho; V4R no 5º EIC na linha hemiclavicular direita) na suspeita de infarto de ventrículo direito. V7 a V9 (dorso, no plano horizontal de V6) na suspeita de infarto posterior, com ponto de corte de 0,5 mm de supradesnível. <span class="ref">[4]</span></p>
+      </div>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-artef" data-group="acc-p">
+      <summary><h2 id="h-artef">Erros de registro e artefatos</h2><span class="acc-sub">Trocas de cabos e interferências</span></summary>
+      <div class="acc-body">
+      
+      <p>Muitos “achados” do ECG são erro técnico. Confira antes de imprimir. <span class="ref">[1]</span></p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th scope="col">Problema</th><th scope="col">Como aparece</th><th scope="col">O que fazer</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Troca braço D ↔ braço E</strong></td><td>P, QRS e T negativos em D1; aVR positivo. Precordiais normais.</td><td>Conferir as cores e repetir.</td></tr>
+            <tr><td><strong>Troca braço E ↔ perna E</strong></td><td>P invertida em D3; D1 e D2 “trocam”; aVL e aVF trocam. Difícil de perceber.</td><td>Conferir antes de registrar.</td></tr>
+            <tr><td><strong>Eletrodo de perna trocado com o de um braço</strong></td><td>D2 ou D3 quase isoelétrico, com amplitude muito pequena.</td><td>Reposicionar.</td></tr>
+            <tr><td><strong>Troca entre precordiais</strong></td><td>Progressão anormal da onda R de V1 a V6.</td><td>Conferir a sequência.</td></tr>
+            <tr><td><strong>V1 e V2 colocados alto</strong></td><td>rSr' em V1, simulando atraso final de condução; P negativa em V1, simulando sobrecarga atrial esquerda.</td><td>Recontar os espaços a partir do ângulo de Louis.</td></tr>
+            <tr><td><strong>Gel em faixa contínua</strong></td><td>V1 a V6 quase iguais (“grande eletrodo”).</td><td>Limpar e aplicar só nos pontos.</td></tr>
+            <tr><td><strong>Tremor, frio, febre, soluço, agitação</strong></td><td>Linha de base irregular; pode simular flutter, fibrilação atrial ou até fibrilação ventricular.</td><td>Aquecer, acalmar, apoiar os membros.</td></tr>
+            <tr><td><strong>Oscilação da linha de base</strong></td><td>Eletrodo mal fixado, respiração, movimento, exame em cadeira de rodas.</td><td>Refixar e pedir para ficar parado.</td></tr>
+            <tr><td><strong>Interferência elétrica</strong></td><td>Linha de base serrilhada e regular.</td><td>Afastar celular e outros aparelhos.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-leitura" data-group="acc-p">
+      <summary><h2 id="h-leitura">Leitura sistemática</h2><span class="acc-sub">Valores de referência e calculadoras</span></summary>
+      <div class="acc-body">
+      
+      <figure class="beat-fig">
+        <div class="fig-frame" id="beat-pro"></div>
+        <figcaption>Escala do papel: 1 quadradinho = 1 mm = 0,04 s na horizontal e 0,1 mV na vertical. 1 quadrado grande = 5 mm = 0,20 s e 0,5 mV (a 25 mm/s e 10 mm/mV).</figcaption>
+      </figure>
+      <ol class="steps">
+        <li><div class="st"><h3>Identificação e técnica</h3><p>Nome, data, hora, calibração (10 mm/mV), velocidade (25 mm/s) e qualidade do traçado.</p></div></li>
+        <li><div class="st"><h3>Ritmo</h3><p>Sinusal: onda P positiva em D1, D2 e aVF, com eixo de P entre 0° e +90°. <span class="ref">[1]</span></p></div></li>
+        <li><div class="st"><h3>Frequência cardíaca</h3><p>Normal em vigília: 50 a 99 bpm. Bradicardia sinusal abaixo de 50; taquicardia sinusal a partir de 100. <span class="ref">[1]</span></p></div></li>
+        <li><div class="st"><h3>Onda P e intervalo PR</h3><p>P com até 110 ms e até 2,5 mm. PR de 120 a 200 ms. <span class="ref">[1]</span></p></div></li>
+        <li><div class="st"><h3>Complexo QRS e eixo</h3><p>Duração abaixo de 120 ms; eixo entre −30° e +90°; transição de R/S em V3–V4. <span class="ref">[1]</span></p></div></li>
+        <li><div class="st"><h3>Repolarização</h3><p>Segmento ST, onda T, onda U e QT corrigido.</p></div></li>
+        <li><div class="st"><h3>Comparação e contexto</h3><p>Compare com ECG anterior e relacione com a clínica. O laudo final é ato médico. <span class="ref">[1]</span></p></div></li>
+      </ol>
+      <h3>Valores de referência em adultos <span class="ref">[1, 8]</span></h3>
+      <dl class="refvals">
+        <dt>Frequência</dt><dd>50–99 bpm</dd>
+        <dt>Onda P</dt><dd>≤ 110 ms · ≤ 2,5 mm</dd>
+        <dt>Intervalo PR</dt><dd>120–200 ms</dd>
+        <dt>QRS</dt><dd>&lt; 120 ms</dd>
+        <dt>Eixo do QRS</dt><dd>−30° a +90°</dd>
+        <dt>QTc (Bazett)</dt><dd>até 450 ms (H) · até 470 ms (M)</dd>
+      </dl>
+      <div class="tools">
+        <div class="card tool" id="tool-fc">
+          <h3>Frequência pelo intervalo RR</h3>
+          <div class="field">
+            <label for="fc-n">Quadrados entre dois R</label>
+            <div class="row">
+              <input type="text" inputmode="decimal" id="fc-n" value="20" autocomplete="off">
+              <select id="fc-tipo" aria-label="Tipo de quadrado">
+                <option value="1500">quadradinhos (1 mm)</option>
+                <option value="300">quadrados grandes (5 mm)</option>
+              </select>
+            </div>
+          </div>
+          <p class="out" id="fc-out" aria-live="polite">75 bpm</p>
+          <p id="fc-class"></p>
+          <p class="note">Vale para ritmo regular. Em ritmo irregular, como na fibrilação atrial, conte os QRS em 6 segundos e multiplique por 10. <span class="ref">[1]</span></p>
+        </div>
+        <div class="card tool" id="tool-qtc">
+          <h3>QT corrigido</h3>
+          <div class="row">
+            <div class="field"><label for="qt-ms">QT (ms)</label><input type="text" inputmode="decimal" id="qt-ms" value="440" autocomplete="off"></div>
+            <div class="field"><label for="qt-fc">FC (bpm)</label><input type="text" inputmode="decimal" id="qt-fc" value="75" autocomplete="off"></div>
+            <div class="field"><label for="qt-sexo">Sexo</label><select id="qt-sexo"><option value="F">Feminino</option><option value="M">Masculino</option></select></div>
+          </div>
+          <p class="out" id="qtc-out" aria-live="polite">—</p>
+          <p><span class="pill" id="qtc-pill"></span></p>
+          <table class="mini" aria-label="QT corrigido por fórmula"><tbody id="qtc-table"></tbody></table>
+          <p class="note">Bazett é o padrão; fora de 60–90 bpm, prefira fórmulas lineares como Framingham e Hodges. Com QRS alargado, os limites mudam. QTc ≥ 500 ms tem forte associação com torsades de pointes.</p>
+        </div>
+      </div>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-alertas" data-group="acc-p">
+      <summary><h2 id="h-alertas">Achados que exigem ação imediata</h2><span class="acc-sub">Supra de ST, BAV, QTc ≥ 500 ms</span></summary>
+      <div class="acc-body">
+      
+      <p>Mostre o traçado ao médico responsável na hora e não libere o paciente se encontrar:</p>
+      <ul class="plain">
+        <li>Supradesnível novo do segmento ST (critérios abaixo) ou bloqueio de ramo esquerdo novo com quadro sugestivo.</li>
+        <li>Infradesnível horizontal ou descendente de ST ≥ 0,5 mm em duas derivações contíguas. Infra de V1 a V4 pode ser infarto posterior: registre V7 a V9. <span class="ref">[4]</span></li>
+        <li>Bloqueio AV de 2º grau Mobitz II, BAV avançado ou BAV total.</li>
+        <li>Taquicardia de QRS largo: cerca de 80% são de origem ventricular. <span class="ref">[1]</span></li>
+        <li>Fibrilação atrial com resposta ventricular elevada (acima de 110 bpm). <span class="ref">[1]</span></li>
+        <li>QTc ≥ 500 ms.</li>
+        <li>Sinais de hiperpotassemia, como T apiculada e QRS alargado.</li>
+      </ul>
+      <div class="callout">
+        <p><strong>Supradesnível de ST (4ª Definição Universal de Infarto)</strong> <span class="ref">[4]</span></p>
+        <p>Elevação nova no ponto J em duas derivações contíguas: ≥ 1 mm em todas as derivações, exceto V2–V3. Em V2–V3: ≥ 2 mm em homens com 40 anos ou mais, ≥ 2,5 mm em homens com menos de 40 anos e ≥ 1,5 mm em mulheres de qualquer idade. Na ausência de hipertrofia ventricular esquerda e de bloqueio de ramo.</p>
+      </div>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-digital" data-group="acc-p">
+      <summary><h2 id="h-digital">ECG e saúde digital</h2><span class="acc-sub">Tele-ECG e LGPD</span></summary>
+      <div class="acc-body">
+      
+      <ul class="plain">
+        <li><strong>Laudo automático:</strong> as medidas do aparelho ajudam, mas usá-las sem revisão médica não é recomendado. <span class="ref">[1]</span></li>
+        <li><strong>Tele-ECG:</strong> o traçado pode ser enviado a centros de referência para laudo a distância, o que amplia o acesso em locais afastados dos grandes centros. A técnica de registro deve seguir as mesmas diretrizes. <span class="ref">[1]</span></li>
+        <li><strong>Telessaúde</strong> é regulamentada no Brasil pela Lei nº 14.510/2022. <span class="ref">[7]</span></li>
+        <li><strong>Proteção de dados:</strong> dados de saúde são dados pessoais sensíveis pela LGPD. Use os sistemas da instituição. Não envie foto de ECG com nome ou outro identificador em aplicativos pessoais ou grupos. Para discutir casos em ensino, retire toda identificação. <span class="ref">[6]</span></li>
+        <li><strong>Para estudar:</strong> a wiki de eletrocardiografia do Centro de Telessaúde do HC-UFMG traz definições e exemplos de traçados. <a href="https://ecg.telessaude.hc.ufmg.br/" target="_blank" rel="noopener">ecg.telessaude.hc.ufmg.br</a> <span class="ref">[8]</span></li>
+      </ul>
+      </div>
+    </details>
+
+    <details class="acc" id="sec-quiz-p" data-group="acc-p">
+      <summary><h2 id="h-quiz-p">Casos rápidos</h2><span class="acc-sub">5 questões</span></summary>
+      <div class="acc-body">
+      
+      <div class="quiz" id="quiz-profissionais"></div>
+      </div>
+    </details>
+
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <section class="sec" aria-labelledby="h-ficha">
+      <div class="foot-brand"><span class="pet-logo" role="img" aria-label="PET-Saúde: Informação e Saúde Digital"></span></div>
+      <h2 id="h-ficha">Ficha técnica</h2>
+      <dl class="meta">
+        <dt>Material</dt><dd>Eletrocardiograma: guia digital para usuários e profissionais</dd>
+        <dt>Autoria</dt><dd>Carlos Rafael Medeiros Pinto, acadêmico de Medicina (UFRR), e equipe do PET-Saúde: Informação e Saúde Digital – UFRR</dd>
+        <dt>Instituições</dt><dd>Universidade Federal de Roraima (UFRR) · Hospital Universitário da UFRR (HU-UFRR/Ebserh) · Programa de Educação pelo Trabalho para a Saúde: Informação e Saúde Digital (PET-Saúde/I&amp;SD), Ministério da Saúde</dd>
+        <dt>Versão</dt><dd>1.3 · versão para revisão (identidade visual do PET-Saúde)</dd>
+        <dt>Data</dt><dd>4 de novembro de 2026</dd>
+        <dt>Evento</dt><dd>Mutirão de Saúde do HU-UFRR, 7 de novembro de 2026</dd>
+        <dt>Público</dt><dd>Adultos. Os valores de referência deste guia não se aplicam a crianças.</dd>
+        <dt>Aviso</dt><dd>Material educativo. Não substitui consulta, exame ou orientação de um profissional de saúde.</dd>
+      </dl>
+    </section>
+    <section class="sec" aria-labelledby="h-refs">
+      <h2 id="h-refs">Referências</h2>
+      <details class="more"><summary>Ver as 8 referências</summary>
+      <ol class="refs">
+        <li>Samesima N, God EG, Kruse JCL, Leal MG, Pinho C, França FFAC, et al. Diretriz da Sociedade Brasileira de Cardiologia sobre a Análise e Emissão de Laudos Eletrocardiográficos – 2022. Arq Bras Cardiol. 2022;119(4):638-80. doi: <a href="https://doi.org/10.36660/abc.20220623" target="_blank" rel="noopener">10.36660/abc.20220623</a></li>
+        <li>Campbell B, Richley D, Ross C, Eggett CJ. Clinical guidelines by consensus: recording a standard 12-lead electrocardiogram. An approved method by the Society for Cardiological Science and Technology (SCST). Londres: SCST; 2017. Disponível em: <a href="https://scst.org.uk/" target="_blank" rel="noopener">scst.org.uk</a></li>
+        <li>Kligfield P, Gettes LS, Bailey JJ, Childers R, Deal BJ, Hancock EW, et al. Recommendations for the standardization and interpretation of the electrocardiogram: part I. Circulation. 2007;115(10):1306-24. doi: <a href="https://doi.org/10.1161/CIRCULATIONAHA.106.180200" target="_blank" rel="noopener">10.1161/CIRCULATIONAHA.106.180200</a></li>
+        <li>Thygesen K, Alpert JS, Jaffe AS, Chaitman BR, Bax JJ, Morrow DA, et al. Fourth universal definition of myocardial infarction (2018). Eur Heart J. 2019;40(3):237-69. doi: <a href="https://doi.org/10.1093/eurheartj/ehy462" target="_blank" rel="noopener">10.1093/eurheartj/ehy462</a></li>
+        <li>Byrne RA, Rossello X, Coughlan JJ, Barbato E, Berry C, Chieffo A, et al. 2023 ESC Guidelines for the management of acute coronary syndromes. Eur Heart J. 2023;44(38):3720-826. doi: <a href="https://doi.org/10.1093/eurheartj/ehad191" target="_blank" rel="noopener">10.1093/eurheartj/ehad191</a></li>
+        <li>Brasil. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD). Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" target="_blank" rel="noopener">planalto.gov.br</a></li>
+        <li>Brasil. Lei nº 14.510, de 27 de dezembro de 2022. Autoriza e disciplina a prática da telessaúde em todo o território nacional. Disponível em: <a href="https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14510.htm" target="_blank" rel="noopener">planalto.gov.br</a></li>
+        <li>Centro de Telessaúde do Hospital das Clínicas da UFMG. Wiki de eletrocardiografia [Internet]. Belo Horizonte: HC-UFMG; [citado 4 nov 2026]. Disponível em: <a href="https://ecg.telessaude.hc.ufmg.br/" target="_blank" rel="noopener">ecg.telessaude.hc.ufmg.br</a></li>
+      </ol>
+      </details>
+    </section>
+  </div>
+</footer>
+
+<script>
+(function(){
+  'use strict';
+  try { document.documentElement.lang = 'pt-BR'; } catch(e){}
+  var $ = function(s, r){ return (r || document).querySelector(s); };
+  var $$ = function(s, r){ return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var store = {
+    get: function(k){ try { return localStorage.getItem(k); } catch(e){ return null; } },
+    set: function(k, v){ try { localStorage.setItem(k, v); } catch(e){} }
+  };
+  var NS = 'ecg-guia-';
+
+  /* ---------- Modelo de um batimento (soma de gaussianas, em mV) ---------- */
+  var WAVES = [[0.15,0.10,0.022],[-0.10,0.205,0.007],[1.25,0.225,0.009],[-0.28,0.245,0.009],[0.30,0.45,0.042]];
+  function mv(t){
+    var s = 0;
+    for (var i = 0; i < WAVES.length; i++){ var a = WAVES[i][0], m = WAVES[i][1], sd = WAVES[i][2], d = t - m; s += a * Math.exp(-(d*d)/(2*sd*sd)); }
+    return s;
+  }
+  function tracePath(o){
+    var step = o.step || 0.25, d = '', i = 0;
+    for (var x = o.x0; x <= o.x1 + 1e-6; x += step){
+      var t = (x - o.x0) / o.ups + (o.t0 || 0);
+      if (o.rr) t = t % o.rr;
+      var y = o.base - mv(t) * o.upm;
+      d += (i++ ? 'L' : 'M') + x.toFixed(2) + ' ' + y.toFixed(2);
+    }
+    return d;
+  }
+
+  /* ---------- Faixa do cabeçalho ---------- */
+  var strip = $('#strip'), SH = 120, BASE = 78, UPM = 36, UPS = 100, RR = 0.8, X0 = 36, SW = 600;
+  function yAt(x){ if (x < X0) return (x >= 8 && x <= 28) ? 42 : BASE; var t = ((x - X0) / UPS) % RR; return BASE - mv(t) * UPM; }
+  function drawStrip(){
+    var r = strip.getBoundingClientRect();
+    if (r.width && r.height) SW = Math.max(300, Math.round(SH * r.width / r.height));
+    strip.setAttribute('viewBox', '0 0 ' + SW + ' ' + SH);
+    $('#strip-bg').setAttribute('width', SW);
+    $('#strip-trace').setAttribute('d', tracePath({x0:X0, x1:SW, ups:UPS, upm:UPM, base:BASE, rr:RR, step:0.5}));
+  }
+  drawStrip();
+  var rz = 0;
+  window.addEventListener('resize', function(){ cancelAnimationFrame(rz); rz = requestAnimationFrame(drawStrip); });
+
+  var reduce = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
+  var gap = $('#strip-gap'), dot = $('#strip-dot'), sx = 0, last = 0, visible = true;
+  if ('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ visible = es[0].isIntersecting; }).observe(strip);
+  }
+  function tick(ts){
+    if (!last) last = ts;
+    var dt = Math.min(0.05, (ts - last) / 1000); last = ts;
+    if (visible && !reduce.matches){
+      sx += dt * 120;
+      if (sx > SW) sx = 0;
+      gap.setAttribute('x', (sx + 3).toFixed(1));
+      dot.setAttribute('cx', sx.toFixed(1));
+      dot.setAttribute('cy', yAt(sx).toFixed(1));
+    }
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+
+  /* ---------- Batimento explicado ---------- */
+  (function(){
+    var ups = 150, upm = 46, base = 82, x0 = 6;
+    var d = tracePath({x0:x0, x1:294, ups:ups, upm:upm, base:base, rr:0.8, t0:0.35});
+    $('#beat-user').innerHTML =
+      '<svg viewBox="0 0 300 120" role="img" aria-label="Desenho do eletrocardiograma, com batidas regulares do coração">' +
+      '<rect width="300" height="120" fill="url(#grid-a)"/>' +
+      '<path class="trace" d="' + d + '"/>' +
+      '</svg>';
+  })();
+
+  (function(){
+    var ups = 250, upm = 100, base = 140, x0 = 15;
+    var d = tracePath({x0:x0, x1:x0 + 0.8*ups, ups:ups, upm:upm, base:base});
+    var X = function(t){ return x0 + t*ups; };
+    var pOn = X(0.045), qOn = X(0.1875), sOff = X(0.2675), tEnd = X(0.555);
+    function br(a, b, y, up){ var k = up ? -4 : 4; return '<path class="brk" d="M' + a.toFixed(1) + ' ' + (y + k) + 'V' + y + 'H' + b.toFixed(1) + 'V' + (y + k) + '"/>'; }
+    $('#beat-pro').innerHTML =
+      '<svg viewBox="0 0 240 220" role="img" aria-label="Batimento sobre papel milimetrado com os intervalos PR de cerca de 140 ms, QRS de 80 ms e QT de 370 ms">' +
+      '<rect width="240" height="220" fill="url(#grid-mm)"/>' +
+      '<path class="trace" d="' + d + '"/>' +
+      br(pOn, qOn, 98, false) +
+      '<text class="ann" x="' + ((pOn + qOn)/2).toFixed(1) + '" y="91" text-anchor="middle">PR 140 ms</text>' +
+      br(qOn, sOff, 180, true) +
+      '<text class="ann" x="' + ((qOn + sOff)/2).toFixed(1) + '" y="194" text-anchor="middle">QRS 80 ms</text>' +
+      br(qOn, tEnd, 206, true) +
+      '<text class="ann" x="' + (tEnd + 4).toFixed(1) + '" y="209">QT 370 ms</text>' +
+      '</svg>';
+  })();
+
+  /* ---------- Eletrodos ---------- */
+  var EL = [
+    {id:'RA', name:'Braço direito (RA)', lbl:'RA', c:'#D7262B', tc:'#FFFFFF', iec:'vermelho', aha:'branco', ahaC:'#FFFFFF', x:52, y:318,
+      where:'Punho ou antebraço direito, na face interna, em pele sem osso saliente.',
+      tip:'Mantenha os eletrodos dos membros nos membros. No tronco, o traçado muda; se precisar adaptar, anote no ECG.'},
+    {id:'LA', name:'Braço esquerdo (LA)', lbl:'LA', c:'#F2C200', tc:'#152027', iec:'amarelo', aha:'preto', ahaC:'#1E1E1E', x:308, y:318,
+      where:'Punho ou antebraço esquerdo, na face interna.',
+      tip:'Trocar os eletrodos dos braços deixa D1 negativo e aVR positivo.'},
+    {id:'RL', name:'Perna direita (RL), neutro', lbl:'RL', c:'#1E1E1E', tc:'#FFFFFF', iec:'preto', aha:'verde', ahaC:'#2E8B3E', x:140, y:436,
+      where:'Tornozelo ou perna direita, na face interna. É o eletrodo de referência.',
+      tip:'Se um eletrodo de perna for trocado com um de braço, D2 ou D3 fica quase reto.'},
+    {id:'LL', name:'Perna esquerda (LL)', lbl:'LL', c:'#2E8B3E', tc:'#FFFFFF', iec:'verde', aha:'vermelho', ahaC:'#D7262B', x:220, y:436,
+      where:'Tornozelo ou perna esquerda, na face interna.',
+      tip:'A troca entre braço esquerdo e perna esquerda é a mais difícil de perceber: P invertida em D3.'},
+    {id:'V1', name:'V1 (C1)', lbl:'V1', c:'#D7262B', tc:'#FFFFFF', iec:'vermelho', aha:'vermelho', ahaC:'#D7262B', x:168, y:160,
+      where:'4º espaço intercostal, na borda direita do esterno.',
+      tip:'Ache o ângulo de Louis, a saliência entre o manúbrio e o corpo do esterno. Ao lado dele fica o 2º espaço intercostal; desça dois espaços até o 4º.'},
+    {id:'V2', name:'V2 (C2)', lbl:'V2', c:'#F2C200', tc:'#152027', iec:'amarelo', aha:'amarelo', ahaC:'#F2C200', x:192, y:160,
+      where:'4º espaço intercostal, na borda esquerda do esterno.',
+      tip:'V1 e V2 colocados alto demais podem simular atraso de condução e sobrecarga atrial esquerda.'},
+    {id:'V3', name:'V3 (C3)', lbl:'V3', c:'#2E8B3E', tc:'#FFFFFF', iec:'verde', aha:'verde', ahaC:'#2E8B3E', x:212, y:174,
+      where:'No ponto médio entre V2 e V4.',
+      tip:'Posicione V4 antes de V3.'},
+    {id:'V4', name:'V4 (C4)', lbl:'V4', c:'#7A4A26', tc:'#FFFFFF', iec:'marrom', aha:'azul', ahaC:'#2457B8', x:232, y:188,
+      where:'5º espaço intercostal esquerdo, na linha hemiclavicular.',
+      tip:'Em mamas volumosas, coloque V4 a V6 abaixo da mama, não sobre o tecido mamário.'},
+    {id:'V5', name:'V5 (C5)', lbl:'V5', c:'#1E1E1E', tc:'#FFFFFF', iec:'preto', aha:'laranja', ahaC:'#E07B12', x:253, y:188,
+      where:'Linha axilar anterior esquerda, no mesmo plano horizontal de V4.',
+      tip:'Use o plano horizontal de V4. Não siga o espaço intercostal para cima.'},
+    {id:'V6', name:'V6 (C6)', lbl:'V6', c:'#7B3FA0', tc:'#FFFFFF', iec:'violeta', aha:'roxo', ahaC:'#7B3FA0', x:273, y:188,
+      where:'Linha axilar média esquerda, no mesmo plano horizontal de V4 e V5.',
+      tip:'Peça para o paciente afastar um pouco o braço para achar a linha axilar média.'}
+  ];
+
+  function bodySVG(pro){
+    var s = '<svg viewBox="0 0 360 470" role="img" aria-label="Figura do corpo de frente com a posição dos 10 eletrodos: seis no peito e quatro nos punhos e tornozelos">';
+    var limbs = ['M84 114Q62 200 52 312','M276 114Q298 200 308 312','M140 336L140 432','M220 336L220 432'];
+    limbs.forEach(function(p){ s += '<path class="limb-o" d="' + p + '"/>'; });
+    limbs.forEach(function(p){ s += '<path class="limb-f" d="' + p + '"/>'; });
+    s += '<rect class="part" x="168" y="68" width="24" height="30" rx="6"/>';
+    s += '<circle class="part" cx="180" cy="46" r="26"/>';
+    s += '<path class="part" d="M92 100Q180 84 268 100L282 112Q286 130 280 160L266 335Q180 352 94 335L80 160Q74 130 78 112Z"/>';
+    s += '<rect class="sternum" x="172" y="102" width="16" height="104" rx="6"/>';
+    if (pro){
+      s += '<line class="ics" x1="88" y1="160" x2="279" y2="160"/><line class="ics" x1="90" y1="188" x2="278" y2="188"/>';
+      s += '<text class="ics-t" x="94" y="155">4º EIC</text><text class="ics-t" x="94" y="183">5º EIC</text>';
+    }
+    s += '<text class="side-t" x="52" y="352" text-anchor="middle">Direito</text><text class="side-t" x="308" y="352" text-anchor="middle">Esquerdo</text>';
+    EL.forEach(function(e){
+      var r = pro ? 11 : 9;
+      s += '<g class="el' + (pro ? ' tap' : '') + '" data-id="' + e.id + '" transform="translate(' + e.x + ' ' + e.y + ')"' +
+        (pro ? ' tabindex="0" role="button" aria-label="' + e.name + '"' : '') + '>' +
+        '<circle class="ring" r="16"/>' +
+        '<circle r="' + r + '" fill="' + e.c + '" stroke="#FFFFFF" stroke-width="2"/>' +
+        (pro ? '<text class="el-t" fill="' + e.tc + '" y="3" text-anchor="middle">' + e.lbl + '</text>' : '') +
+        '</g>';
+    });
+    return s + '</svg>';
+  }
+  $('#body-user').innerHTML = bodySVG(false);
+  $('#body-pro').innerHTML = bodySVG(true);
+
+  var info = $('#el-info');
+  function selectEl(id){
+    var e = EL.filter(function(x){ return x.id === id; })[0]; if (!e) return;
+    $$('#body-pro .el').forEach(function(g){ var on = g.getAttribute('data-id') === id; g.classList.toggle('on', on); g.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+    info.innerHTML =
+      '<p class="eyebrow">Eletrodo selecionado</p>' +
+      '<p class="name">' + e.name + '</p>' +
+      '<p>' + e.where + '</p>' +
+      '<div class="swatches"><span class="sw"><i style="background:' + e.c + '"></i>IEC: ' + e.iec + '</span><span class="sw"><i style="background:' + e.ahaC + '"></i>AHA: ' + e.aha + '</span></div>' +
+      '<p class="note"><strong>Dica:</strong> ' + e.tip + '</p>';
+  }
+  $$('#body-pro .el').forEach(function(g){
+    var id = g.getAttribute('data-id');
+    g.addEventListener('click', function(){ selectEl(id); });
+    g.addEventListener('keydown', function(ev){ if (ev.key === 'Enter' || ev.key === ' '){ ev.preventDefault(); selectEl(id); } });
+  });
+  selectEl('V1');
+  $('#el-table').innerHTML = EL.map(function(e){
+    return '<tr><td><strong>' + e.name + '</strong></td><td>' + e.where + '</td><td>' + e.iec + '</td><td>' + e.aha + '</td></tr>';
+  }).join('');
+
+  /* ---------- Checklists ---------- */
+  $$('.check').forEach(function(list){
+    var key = NS + 'check-' + list.getAttribute('data-key');
+    var boxes = $$('input[type="checkbox"]', list);
+    var sec = list.parentNode, count = $('.count', sec), reset = $('.reset', sec);
+    var saved = (store.get(key) || '').split(',');
+    boxes.forEach(function(b){ if (saved.indexOf(b.id) > -1) b.checked = true; });
+    function upd(){
+      var on = boxes.filter(function(b){ return b.checked; });
+      count.textContent = on.length + ' de ' + boxes.length + ' itens marcados';
+      store.set(key, on.map(function(b){ return b.id; }).join(','));
+    }
+    boxes.forEach(function(b){ b.addEventListener('change', upd); });
+    reset.addEventListener('click', function(){ boxes.forEach(function(b){ b.checked = false; }); upd(); });
+    upd();
+  });
+
+  /* ---------- Calculadoras ---------- */
+  function num(v){ var n = parseFloat(String(v).replace(',', '.')); return isFinite(n) ? n : NaN; }
+  function calcFC(){
+    var n = num($('#fc-n').value), k = +$('#fc-tipo').value, out = $('#fc-out'), cl = $('#fc-class');
+    if (!(n > 0)){ out.textContent = '—'; cl.innerHTML = '<span class="pill warn">Digite um número maior que zero</span>'; return; }
+    var bpm = Math.round(k / n);
+    out.textContent = bpm + ' bpm';
+    cl.innerHTML = bpm < 50 ? '<span class="pill warn">Abaixo de 50 bpm: bradicardia</span>'
+      : bpm >= 100 ? '<span class="pill warn">100 bpm ou mais: taquicardia</span>'
+      : '<span class="pill ok">Faixa normal (50–99 bpm)</span>';
+  }
+  function calcQTc(){
+    var qt = num($('#qt-ms').value), fc = num($('#qt-fc').value), sexo = $('#qt-sexo').value;
+    var out = $('#qtc-out'), pill = $('#qtc-pill'), tb = $('#qtc-table');
+    if (!(qt > 0) || !(fc > 0)){ out.textContent = '—'; pill.className = 'pill warn'; pill.textContent = 'Preencha QT e FC com números maiores que zero'; tb.innerHTML = ''; return; }
+    var rr = 60 / fc;
+    var f = {
+      'Bazett': qt / Math.sqrt(rr),
+      'Fridericia': qt / Math.cbrt(rr),
+      'Framingham': qt + 154 * (1 - rr),
+      'Hodges': qt + 1.75 * (fc - 60)
+    };
+    var useLinear = fc < 60 || fc > 90, ref = useLinear ? 'Framingham' : 'Bazett', val = Math.round(f[ref]);
+    var lim = sexo === 'F' ? 470 : 450;
+    out.textContent = 'QTc ' + val + ' ms';
+    if (val >= 500){ pill.className = 'pill bad'; pill.textContent = 'Muito prolongado (≥ 500 ms)'; }
+    else if (val > lim){ pill.className = 'pill warn'; pill.textContent = 'Prolongado (acima de ' + lim + ' ms)'; }
+    else { pill.className = 'pill ok'; pill.textContent = 'Dentro do limite (até ' + lim + ' ms)'; }
+    tb.innerHTML = Object.keys(f).map(function(k){
+      return '<tr' + (k === ref ? ' class="use"' : '') + '><td>' + k + (k === ref ? ' (usada)' : '') + '</td><td>' + Math.round(f[k]) + ' ms</td></tr>';
+    }).join('');
+  }
+  ['#fc-n','#fc-tipo'].forEach(function(s){ $(s).addEventListener('input', calcFC); $(s).addEventListener('change', calcFC); });
+  ['#qt-ms','#qt-fc','#qt-sexo'].forEach(function(s){ $(s).addEventListener('input', calcQTc); $(s).addEventListener('change', calcQTc); });
+  calcFC(); calcQTc();
+
+  /* ---------- Quiz ---------- */
+  var QU = [
+    {q:'O eletrocardiograma dói?', o:['Sim, dói um pouco.','Não, não dói.'], a:1,
+      e:'O exame não dói e não dá choque.'},
+    {q:'Precisa ficar sem comer antes do exame?', o:['Sim.','Não.'], a:1,
+      e:'Pode comer normalmente.'},
+    {q:'Na hora do exame, você deve:', o:['Ficar parado e quieto.','Conversar e se mexer.'], a:0,
+      e:'Assim o desenho do coração sai certinho.'},
+    {q:'Dor forte no peito que não passa. O que fazer?', o:['Esperar passar.','Ligar 192 ou ir ao pronto-socorro.'], a:1,
+      e:'Não espere. Peça ajuda na hora.'},
+    {q:'Chegou no celular um chá que “cura o coração”. O que fazer?', o:['Desconfiar e perguntar a um profissional de saúde.','Tomar e mandar para os amigos.'], a:0,
+      e:'Promessa de cura milagrosa é sinal de informação falsa.'}
+  ];
+  var QP = [
+    {q:'P, QRS e T negativos em D1, aVR positivo e precordiais com progressão normal de R. Primeira hipótese?', o:['Dextrocardia.','Troca dos eletrodos dos braços.','Infarto de parede lateral.'], a:1,
+      e:'Na dextrocardia, D1 também fica negativo, mas a onda R diminui de V1 para V6. Com precordiais normais, pense em troca de eletrodos e repita o exame. [1]'},
+    {q:'Mulher, QT medido de 440 ms, FC de 75 bpm. O QTc por Bazett é:', o:['Cerca de 440 ms, normal.','Cerca de 400 ms, normal.','Cerca de 492 ms, prolongado.'], a:2,
+      e:'RR = 0,8 s; √0,8 ≈ 0,894; 440 ÷ 0,894 ≈ 492 ms, acima de 470 ms. Teste na calculadora acima. [1]'},
+    {q:'Paciente com dor torácica na triagem. Prazo para registrar e mostrar o ECG ao médico:', o:['Até 10 minutos.','Até 30 minutos.','Até 60 minutos.'], a:0,
+      e:'A meta é ECG interpretado em até 10 minutos do primeiro contato. [5]'},
+    {q:'Mulher de 52 anos, supradesnível novo de ST de 1,5 mm no ponto J em V2 e V3, sem bloqueio de ramo. Pela 4ª Definição Universal:', o:['Não atinge o critério; precisa de 2 mm.','Atinge o critério para mulheres.','Só vale se estiver também em D2.'], a:1,
+      e:'Em V2–V3, o corte é ≥ 1,5 mm em mulheres de qualquer idade; ≥ 2 mm em homens com 40 anos ou mais; ≥ 2,5 mm em homens com menos de 40. [4]'},
+    {q:'Gel aplicado em faixa contínua sobre o precórdio produz:', o:['V1 a V6 quase iguais.','Baixa voltagem só em V1.','Nenhum efeito no traçado.'], a:0,
+      e:'É o efeito “grande eletrodo”: o aparelho registra a média dos potenciais. [1]'}
+  ];
+  function buildQuiz(root, items, words){
+    words = words || {ok:'Certo.', no:'Não é bem assim.'};
+    root.innerHTML = '';
+    var answered = 0, right = 0;
+    var row = document.createElement('div'); row.className = 'score-row';
+    var score = document.createElement('span'); score.setAttribute('aria-live', 'polite');
+    var again = document.createElement('button'); again.type = 'button'; again.className = 'textbtn'; again.textContent = 'Recomeçar';
+    again.addEventListener('click', function(){ buildQuiz(root, items, words); });
+    function upd(){ score.textContent = answered < items.length ? (answered + ' de ' + items.length + ' respondidas · ' + right + ' certas') : ('Você acertou ' + right + ' de ' + items.length + '.'); }
+    items.forEach(function(it, qi){
+      var box = document.createElement('div'); box.className = 'q'; box.setAttribute('role', 'group');
+      var qid = root.id + '-q' + qi; box.setAttribute('aria-labelledby', qid);
+      var qt = document.createElement('p'); qt.className = 'qt'; qt.id = qid; qt.textContent = (qi + 1) + '. ' + it.q;
+      var opts = document.createElement('div'); opts.className = 'opts';
+      var fb = document.createElement('p'); fb.className = 'fb'; fb.hidden = true; fb.setAttribute('aria-live', 'polite');
+      it.o.forEach(function(txt, oi){
+        var b = document.createElement('button'); b.type = 'button'; b.className = 'opt'; b.textContent = txt;
+        b.addEventListener('click', function(){
+          if (box.getAttribute('data-done')) return;
+          box.setAttribute('data-done', '1'); answered++;
+          var ok = oi === it.a; if (ok) right++;
+          Array.prototype.forEach.call(opts.children, function(x, xi){ x.disabled = true; if (xi === it.a) x.classList.add('right'); else if (xi === oi) x.classList.add('wrong'); });
+          fb.innerHTML = (ok ? '<strong class="ok-t">' + words.ok + '</strong> ' : '<strong class="bad-t">' + words.no + '</strong> ') + it.e;
+          fb.hidden = false; upd();
+        });
+        opts.appendChild(b);
+      });
+      box.appendChild(qt); box.appendChild(opts); box.appendChild(fb);
+      root.appendChild(box);
+    });
+    row.appendChild(score); row.appendChild(again); root.appendChild(row);
+    upd();
+  }
+  buildQuiz($('#quiz-usuarios'), QU, {ok:'Isso mesmo!', no:'Quase!'});
+  buildQuiz($('#quiz-profissionais'), QP);
+
+  /* ---------- Leitura em voz alta ---------- */
+  var synth = ('speechSynthesis' in window && typeof SpeechSynthesisUtterance !== 'undefined') ? window.speechSynthesis : null;
+  var speaking = null;
+  function stopSpeech(){
+    if (synth) { try { synth.cancel(); } catch(e){} }
+    if (speaking){ speaking.setAttribute('aria-pressed', 'false'); $('.lt', speaking).textContent = 'Ouvir'; speaking = null; }
+  }
+  function readable(sec){
+    var c = sec.cloneNode(true);
+    $$('button, svg, .no-say, .facts', c).forEach(function(n){ n.parentNode && n.parentNode.removeChild(n); });
+    $$('h2, h3, li, p, dt, dd, summary, figcaption', c).forEach(function(n){ n.appendChild(document.createTextNode('. ')); });
+    return c.textContent.replace(/\s+/g, ' ').replace(/([.:;!?])\s*\.(\s|$)/g, '$1 ').replace(/\s+/g, ' ').trim();
+  }
+  if (!synth){
+    $$('.listen').forEach(function(b){ b.hidden = true; });
+  } else {
+    $$('.listen').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        if (speaking === btn){ stopSpeech(); return; }
+        stopSpeech();
+        var sec = document.getElementById(btn.getAttribute('data-for'));
+        var u = new SpeechSynthesisUtterance(readable(sec));
+        u.lang = 'pt-BR'; u.rate = 0.95;
+        try {
+          var vs = synth.getVoices() || [];
+          var v = vs.filter(function(x){ return /pt[-_]BR/i.test(x.lang); })[0] || vs.filter(function(x){ return /^pt/i.test(x.lang); })[0];
+          if (v) u.voice = v;
+        } catch(e){}
+        u.onend = u.onerror = function(){ if (speaking === btn) stopSpeech(); };
+        speaking = btn; btn.setAttribute('aria-pressed', 'true'); $('.lt', btn).textContent = 'Parar';
+        try { synth.speak(u); } catch(e){ stopSpeech(); }
+      });
+    });
+  }
+
+  /* ---------- Abas (versões) com endereço #usuarios / #profissionais ---------- */
+  var VIEWS = ['usuarios', 'profissionais'];
+  var bar = $('.bar');
+  function show(name, scroll){
+    VIEWS.forEach(function(v){
+      var on = v === name, tab = $('#tab-' + v);
+      tab.setAttribute('aria-selected', on ? 'true' : 'false');
+      tab.tabIndex = on ? 0 : -1;
+      $('#painel-' + v).hidden = !on;
+    });
+    stopSpeech();
+    if (scroll){
+      var top = bar.getBoundingClientRect().top + window.pageYOffset;
+      if (window.pageYOffset > top) window.scrollTo(0, top);
+    }
+  }
+  function go(name){
+    if (location.hash.slice(1) !== name){ try { location.hash = name; } catch(e){} }
+    show(name, true);
+  }
+  $$('[role="tab"]').forEach(function(tab, i, all){
+    tab.addEventListener('click', function(){ go(tab.getAttribute('data-view')); });
+    tab.addEventListener('keydown', function(ev){
+      if (ev.key === 'ArrowRight' || ev.key === 'ArrowLeft'){
+        ev.preventDefault();
+        var n = all[(i + (ev.key === 'ArrowRight' ? 1 : all.length - 1)) % all.length];
+        n.focus(); go(n.getAttribute('data-view'));
+      }
+    });
+  });
+  window.addEventListener('hashchange', function(){ var h = location.hash.slice(1); if (VIEWS.indexOf(h) > -1) show(h, true); });
+  var h0 = location.hash.slice(1);
+  show(VIEWS.indexOf(h0) > -1 ? h0 : 'usuarios', false);
+
+  /* ---------- Temas que abrem e fecham ---------- */
+  $$('details.acc').forEach(function(d){
+    var byUser = false;
+    $('summary', d).addEventListener('click', function(){ byUser = true; });
+    d.addEventListener('toggle', function(){
+      if (!d.open){ if (speaking && d.contains(speaking)) stopSpeech(); return; }
+      if (!byUser) return;
+      byUser = false;
+      var g = d.getAttribute('data-group');
+      $$('details.acc[data-group="' + g + '"]').forEach(function(o){ if (o !== d && o.open) o.open = false; });
+      requestAnimationFrame(function(){
+        var top = d.getBoundingClientRect().top, barH = bar.getBoundingClientRect().height;
+        if (top < barH || top > window.innerHeight * 0.55){
+          try { d.scrollIntoView({block:'start', behavior: reduce.matches ? 'auto' : 'smooth'}); } catch(e){ d.scrollIntoView(true); }
+        }
+      });
+    });
+  });
+
+  /* ---------- Tamanho do texto ---------- */
+  var SCALES = [0.9, 1, 1.12, 1.25, 1.4];
+  var si = parseInt(store.get(NS + 'escala'), 10); if (!(si >= 0 && si < SCALES.length)) si = 1;
+  function applyScale(){
+    document.documentElement.style.setProperty('--scale', SCALES[si]);
+    $('#font-dec').disabled = si === 0; $('#font-inc').disabled = si === SCALES.length - 1;
+    store.set(NS + 'escala', String(si));
+    drawStrip();
+  }
+  $('#font-dec').addEventListener('click', function(){ if (si > 0){ si--; applyScale(); } });
+  $('#font-inc').addEventListener('click', function(){ if (si < SCALES.length - 1){ si++; applyScale(); } });
+  applyScale();
+})();
+</script>
+
+</body>
+</html>

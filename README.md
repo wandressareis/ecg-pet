@@ -8,3 +8,6 @@ Guia digital sobre o eletrocardiograma (ECG), com uma versão em linguagem simpl
 - **Versão:** 1.3 (para revisão) — 4 de novembro de 2026
 
 Material educativo. Não substitui consulta, exame ou orientação de um profissional de saúde.
+
+Acesse a página: 
+[Guia do Eletrocardiograma - HU-UFRR](https://github.io)

@@ -10,4 +10,4 @@ Guia digital sobre o eletrocardiograma (ECG), com uma versão em linguagem simpl
 Material educativo. Não substitui consulta, exame ou orientação de um profissional de saúde.
 
 Acesse a página: 
-[Guia do Eletrocardiograma - HU-UFRR](https://github.io)
+[Guia do Eletrocardiograma - HU-UFRR](https://wandressareis.github.io/ecg-pet/)
